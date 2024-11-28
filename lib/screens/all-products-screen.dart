@@ -10,6 +10,8 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:flutter_swipe_action_cell/flutter_swipe_action_cell.dart';
 import 'package:get/get.dart';
 
+import '../controller/category-dropdown_controller.dart';
+import '../controller/is-sale-controller.dart';
 import '../model/product-model.dart';
 import '../utilis/constant.dart';
 import 'add-products-screen.dart';
@@ -149,19 +151,19 @@ class _AllProductsScreenState extends State<AllProductsScreen> {
                       title: Text(productModel.productName),
                       subtitle: Text(productModel.productId),
                       trailing: GestureDetector(
-                          // onTap: () {
-                          //   final editProdouctCategory =
-                          //       Get.put(CategoryDropDownController());
-                          //   final isSaleController =
-                          //       Get.put(IsSaleController());
-                          //   editProdouctCategory
-                          //       .setOldValue(productModel.categoryId);
-                          //
-                          //   isSaleController
-                          //       .setIsSaleOldValue(productModel.isSale);
-                          //   Get.to(() =>
-                          //       EditProductScreen(productModel: productModel));
-                          // },
+                          onTap: () {
+                            final editProdouctCategory =
+                                Get.put(CategoryDropDownController());
+                            final isSaleController =
+                                Get.put(IsSaleController());
+                            editProdouctCategory
+                                .setOldValue(productModel.categoryId);
+
+                            isSaleController
+                                .setIsSaleOldValue(productModel.isSale);
+                            Get.to(() =>
+                                EditProductScreen(productModel: productModel));
+                          },
                           child: Icon(Icons.edit)),
                     ),
                   ),
