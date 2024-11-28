@@ -15,6 +15,7 @@ import '../controller/is-sale-controller.dart';
 import '../model/product-model.dart';
 import '../utilis/constant.dart';
 import 'add-products-screen.dart';
+import 'edit-product-screen.dart';
 
 
 class AllProductsScreen extends StatefulWidget {

@@ -5,6 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
+import '../controller/products-images-controller.dart';
+import '../model/categories_model.dart';
+import '../service/generate-ids-service.dart';
+import '../utilis/constant.dart';
+
 
 class AddCategoriesScreen extends StatefulWidget {
   const AddCategoriesScreen({super.key});
