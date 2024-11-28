@@ -9,8 +9,10 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
 import '../controller/category-dropdown_controller.dart';
+import '../controller/edit-product-controller.dart';
 import '../controller/is-sale-controller.dart';
 import '../model/product-model.dart';
+import '../utilis/constant.dart';
 
 
 class EditProductScreen extends StatefulWidget {
